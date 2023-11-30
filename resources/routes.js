@@ -17,17 +17,17 @@ const router = createRouter({
             path: '/admin/appointments',
             name: 'admin.appointments',
             component: ListAppointments
-        }
+        },
         {
             path: '/admin/users',
             name: 'admin.users',
             component: ListUsers
-        }
+        },
         {
             path: '/admin/settings',
             name: 'admin.settings',
             component: UpdateSetting
-        }
+        },
         {
             path: '/admin/profile',
             name: 'admin.profile',

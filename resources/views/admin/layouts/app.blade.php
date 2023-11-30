@@ -273,7 +273,7 @@
 
 
                         <li class="nav-item">
-                            <router-link to="/admin/setttings" active-class="active" class="nav-link">
+                            <router-link to="/admin/settings" active-class="active" class="nav-link">
                                 <i class="nav-icon fas fa-cog"></i>
                                 <p>
                                     Settings
@@ -293,12 +293,12 @@
 
 
                         <li class="nav-item">
-                            <router-link to="/admin/users" active-class="active" class="nav-link">
+                            <a to="/admin/users" active-class="active" class="nav-link">
                                 <i class="nav-icon fas fa-sign-out-alt"></i>
                                 <p>
                                     Logout
                                 </p>
-                            </router-link>
+                            </a>
                         </li>
                     </ul>
                 </nav>
