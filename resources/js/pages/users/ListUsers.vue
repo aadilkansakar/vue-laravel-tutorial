@@ -67,7 +67,7 @@
 
     const editUser = (user) => {
         editing.value = true;
-        form.value.resetForm();
+        // form.value.resetForm();
         $('#userFormModal').modal('show');
         formValues.value = {
             id: user.id,
