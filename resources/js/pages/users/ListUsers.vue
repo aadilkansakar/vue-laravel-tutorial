@@ -41,6 +41,7 @@
 
     const addUser = () => {
         editing.value = false;
+        form.value.resetForm();
         $('#userFormModal').modal('show');
     };
 
@@ -57,17 +58,16 @@
             });
     };
 
-    const handleSubmit = (values) => {
+    const handleSubmit = (values, actions) => {
         if (editing.value) {
-            updateUser(values);
+            updateUser(values, actions);
         } else {
-            createUser(values);
+            createUser(values, actions);
         }
     }
 
     const editUser = (user) => {
         editing.value = true;
-        // form.value.resetForm();
         $('#userFormModal').modal('show');
         formValues.value = {
             id: user.id,
